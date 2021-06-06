@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountModelController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LopHocsController.cs" />
     <Compile Include="Controllers\SinhViensController.cs" />
@@ -138,7 +139,12 @@
     <Compile Include="Migrations\202106060824130_addtable.Designer.cs">
       <DependentUpon>202106060824130_addtable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106060838268_addtable2.cs" />
+    <Compile Include="Migrations\202106060838268_addtable2.Designer.cs">
+      <DependentUpon>202106060838268_addtable2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\Connect.cs" />
     <Compile Include="Models\LopHoc.cs" />
     <Compile Include="Models\SinhVien.cs" />
@@ -190,6 +196,7 @@
     <Content Include="Views\LopHocs\Details.cshtml" />
     <Content Include="Views\LopHocs\Edit.cshtml" />
     <Content Include="Views\LopHocs\Index.cshtml" />
+    <Content Include="Views\AccountModel\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -210,6 +217,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202106060824130_addtable.resx">
       <DependentUpon>202106060824130_addtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106060838268_addtable2.resx">
+      <DependentUpon>202106060838268_addtable2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -14,6 +14,7 @@ namespace PhamThiTraMy_01.Models
 
         public virtual DbSet<LopHoc>LopHocs { get; set; }
         public virtual DbSet<SinhVien> SinhViens { get; set; }
+        public virtual DbSet<AccountModel> AccountModels { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }

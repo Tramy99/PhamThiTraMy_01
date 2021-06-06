@@ -10,11 +10,13 @@ using PhamThiTraMy_01.Models;
 
 namespace PhamThiTraMy_01.Controllers
 {
+    [Authorize]
     public class SinhViensController : Controller
     {
         private Connect db = new Connect();
 
         // GET: SinhViens
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var sinhViens = db.SinhViens.Include(s => s.LopHoc);

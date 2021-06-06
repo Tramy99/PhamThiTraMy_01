@@ -10,11 +10,13 @@ using PhamThiTraMy_01.Models;
 
 namespace PhamThiTraMy_01.Controllers
 {
+    [Authorize]
     public class LopHocsController : Controller
     {
         private Connect db = new Connect();
 
         // GET: LopHocs
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View(db.LopHocs.ToList());

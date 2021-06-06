@@ -22,7 +22,17 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Lớp Học", "Index", "LopHocs")</li>
                     <li>@Html.ActionLink("Sinh Viên", "Index", "SinhViens")</li>
-                    <li>@Html.ActionLink("Contact", "Index", "Home")</li>
+                    <li>
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            @Html.ActionLink("Đăng Nhập", "Login", "AccountModel")
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Đăng xuất", "Logoff", "AccountModel")
+                        }
+                    </li>
+
                 </ul>
             </div>
         </div>
